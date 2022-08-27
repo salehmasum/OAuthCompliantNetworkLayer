@@ -16,6 +16,15 @@
 		51B63EC428B849CE00C60466 /* OAuth2AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EC328B849CE00C60466 /* OAuth2AppTests.swift */; };
 		51B63ECE28B849CE00C60466 /* OAuth2AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63ECD28B849CE00C60466 /* OAuth2AppUITests.swift */; };
 		51B63ED028B849CE00C60466 /* OAuth2AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63ECF28B849CE00C60466 /* OAuth2AppUITestsLaunchTests.swift */; };
+		51B63EE028B84BFB00C60466 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EDF28B84BFB00C60466 /* WelcomeViewController.swift */; };
+		51B63EE228B84F6700C60466 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EE128B84F6700C60466 /* Extensions.swift */; };
+		51B63EE428B8901200C60466 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EE328B8901200C60466 /* AuthViewController.swift */; };
+		51B63EE628B893DA00C60466 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EE528B893DA00C60466 /* AuthManager.swift */; };
+		51B63EE928B8CBB900C60466 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EE828B8CBB900C60466 /* AuthResponse.swift */; };
+		51B63EED28BA16CB00C60466 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EEC28BA16CB00C60466 /* MainTabBarController.swift */; };
+		51B63EEF28BA1C0200C60466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EEE28BA1C0200C60466 /* HomeViewController.swift */; };
+		51B63EF128BA1C0F00C60466 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EF028BA1C0F00C60466 /* SearchViewController.swift */; };
+		51B63EF328BA1C1B00C60466 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B63EF228BA1C1A00C60466 /* LibraryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		51B63EC928B849CE00C60466 /* OAuth2AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth2AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B63ECD28B849CE00C60466 /* OAuth2AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2AppUITests.swift; sourceTree = "<group>"; };
 		51B63ECF28B849CE00C60466 /* OAuth2AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51B63EDF28B84BFB00C60466 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		51B63EE128B84F6700C60466 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		51B63EE328B8901200C60466 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		51B63EE528B893DA00C60466 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		51B63EE828B8CBB900C60466 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		51B63EEC28BA16CB00C60466 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		51B63EEE28BA1C0200C60466 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		51B63EF028BA1C0F00C60466 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		51B63EF228BA1C1A00C60466 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +117,10 @@
 		51B63EAB28B849CA00C60466 /* OAuth2App */ = {
 			isa = PBXGroup;
 			children = (
-				51B63EAC28B849CA00C60466 /* AppDelegate.swift */,
-				51B63EAE28B849CA00C60466 /* SceneDelegate.swift */,
+				51B63EE728B8CBA100C60466 /* Models */,
+				51B63EDE28B84A3B00C60466 /* Managers */,
+				51B63EDD28B84A3100C60466 /* Resources */,
+				51B63EDC28B84A1B00C60466 /* Controllers */,
 				51B63EB028B849CA00C60466 /* ViewController.swift */,
 				51B63EB228B849CA00C60466 /* Main.storyboard */,
 				51B63EB528B849CD00C60466 /* Assets.xcassets */,
@@ -125,6 +145,61 @@
 				51B63ECF28B849CE00C60466 /* OAuth2AppUITestsLaunchTests.swift */,
 			);
 			path = OAuth2AppUITests;
+			sourceTree = "<group>";
+		};
+		51B63EDC28B84A1B00C60466 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51B63EEB28BA164E00C60466 /* Other */,
+				51B63EEA28BA163D00C60466 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		51B63EDD28B84A3100C60466 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51B63EAC28B849CA00C60466 /* AppDelegate.swift */,
+				51B63EAE28B849CA00C60466 /* SceneDelegate.swift */,
+				51B63EE128B84F6700C60466 /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		51B63EDE28B84A3B00C60466 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				51B63EE528B893DA00C60466 /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		51B63EE728B8CBA100C60466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51B63EE828B8CBB900C60466 /* AuthResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51B63EEA28BA163D00C60466 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				51B63EEC28BA16CB00C60466 /* MainTabBarController.swift */,
+				51B63EEE28BA1C0200C60466 /* HomeViewController.swift */,
+				51B63EF028BA1C0F00C60466 /* SearchViewController.swift */,
+				51B63EF228BA1C1A00C60466 /* LibraryViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		51B63EEB28BA164E00C60466 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				51B63EDF28B84BFB00C60466 /* WelcomeViewController.swift */,
+				51B63EE328B8901200C60466 /* AuthViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B63EE228B84F6700C60466 /* Extensions.swift in Sources */,
+				51B63EF128BA1C0F00C60466 /* SearchViewController.swift in Sources */,
+				51B63EE628B893DA00C60466 /* AuthManager.swift in Sources */,
+				51B63EED28BA16CB00C60466 /* MainTabBarController.swift in Sources */,
 				51B63EB128B849CA00C60466 /* ViewController.swift in Sources */,
+				51B63EE028B84BFB00C60466 /* WelcomeViewController.swift in Sources */,
+				51B63EEF28BA1C0200C60466 /* HomeViewController.swift in Sources */,
 				51B63EAD28B849CA00C60466 /* AppDelegate.swift in Sources */,
+				51B63EE428B8901200C60466 /* AuthViewController.swift in Sources */,
+				51B63EE928B8CBB900C60466 /* AuthResponse.swift in Sources */,
+				51B63EF328BA1C1B00C60466 /* LibraryViewController.swift in Sources */,
 				51B63EAF28B849CA00C60466 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
